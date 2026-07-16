@@ -39,3 +39,12 @@ next3days = today + timedelta(days=3)
 print(next3days)
 next2hours = today + timedelta(hours=2)
 print(next2hours)
+
+# 指定日期格式 strftime
+print(f"{today.strftime("%Y-%m-%d %H:%M:%S")}")
+print(f"{today.strftime("%Y 年 %m 月 %d 日 %H:%M:%S")}")
+
+# 轉回日期物件 strptime
+datestr01 = "2026-07-16 15:18:03"
+datetime05 = datetime.strptime(datestr01, "%Y-%m-%d %H:%M:%S")
+print(datetime05)

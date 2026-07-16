@@ -5,23 +5,23 @@ class Todo:
     # isDel: 軟刪除用的屬性
     def __init__(self, title: str) -> None:
         self.title = title
-        self.isFinished = False
-        self.isDel = False
+        self.is_finished = False
+        self.is_del = False
     def to_str(self) -> str:
         # 為 todolist 的 print 設計的
         mark = " "
-        if self.isFinished:
+        if self.is_finished:
             mark = "v"
         return f"[{mark}] {self.title}\n"
     def __str__(self) -> str:
         mark = " "
-        if self.isFinished:
+        if self.is_finished:
             mark = "v"
         return f"[{mark}] {self.title}"
 
 def main():
     todo01 = Todo("買雞胸肉")
-    todo01.isFinished = True
+    todo01.is_finished = True
     print(todo01)
 
 if __name__ == "__main__":

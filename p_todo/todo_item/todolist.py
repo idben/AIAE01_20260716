@@ -1,4 +1,4 @@
-from todo import Todo
+from todo_item.todo import Todo
 
 class Todolist:
     def __init__(self, title: str) -> None:

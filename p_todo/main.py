@@ -1,5 +1,4 @@
-from todo import Todo
-from todolist import Todolist
+from todo_item.todolist import Todolist
 
 # 建立待辦事項列表
 list01 = Todolist("去日本必買")

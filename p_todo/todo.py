@@ -7,6 +7,12 @@ class Todo:
         self.title = title
         self.isFinished = False
         self.isDel = False
+    def to_str(self) -> str:
+        # 為 todolist 的 print 設計的
+        mark = " "
+        if self.isFinished:
+            mark = "v"
+        return f"[{mark}] {self.title}\n"
     def __str__(self) -> str:
         mark = " "
         if self.isFinished:
